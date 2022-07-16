@@ -1,7 +1,7 @@
 {
-  "name": "example-package",
-  "version": "1.0.0",
-  "description": "pacakge",
+  "name": "<PACKAGE-NAME>",
+  "version": "0.0.0",
+  "description": "<DESCRIPTION>",
   "keywords": [
     "package"
   ],
@@ -31,10 +31,6 @@
     "bundle:analyse": "webpack --config webpack.prod.js --profile --json > ./dist/stats.json && webpack-bundle-analyzer ./dist/stats.json",
     "postinstall": "node scripts/postinstall.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/deepstreamIO/<PATH>.git"
-  },
   "devDependencies": {
     "@istanbuljs/nyc-config-typescript": "^1.0.1",
     "@types/chai": "^4.2.14",
@@ -60,15 +56,16 @@
     "webpack-bundle-analyzer": "^3.9.0",
     "webpack-cli": "^3.3.12"
   },
-  "author": "deepstreamHub GmbH",
+  "author": "<AUTHOR NAME>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/<GIT PATH>.git"
+  },
   "bugs": {
-    "url": "https://github.com/deepstreamIO/deepstream.io-client-js/issues"
+    "url": "https://github.com/<GIT PATH>/issues"
   },
-  "homepage": "http://deepstreamio.github.io",
-  "eslintConfig": {
-    "extends": "deepstream"
-  },
+  "homepage": "<HOMEPAGE>",
   "husky": {
     "hooks": {
       "pre-commit": "npm t && npm run lint && npm run build",
